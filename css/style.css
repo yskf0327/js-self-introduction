@@ -1,0 +1,127 @@
+@charset 'utf-8';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+textarea:not([rows]) {
+    min-height: 10em
+}
+
+:target {
+    scroll-margin-block: 5ex
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: min(92%, 800px);
+    margin-inline: auto;
+    padding-block: 1rem;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-content: center;
+    gap: 1rem;
+}
+
+.display-area-wrapper {
+    width: clamp(350px, 261.972px + 23.474vw, 600px);
+    margin-inline: auto;
+    background-image: url(../img/bunbougu_kokuban.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 300px; */
+    aspect-ratio: 200/143;
+}
+
+.display-area {
+    padding: 2rem 3rem;
+    color: white;
+    line-height: 1.8;
+}
+
+.title01 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
